@@ -33,7 +33,7 @@ for (let kbd of seats) {
       });
 
       if (array.length > 4) {
-        alert("You Buy Maximum Ticket");
+        alert("HEY ! You Buy Maximum Ticket");
 
         return;
       } else if (array.length === 4) {
