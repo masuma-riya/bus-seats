@@ -64,10 +64,10 @@ document.getElementById("apply").addEventListener("click", function () {
   setDiscount.classList.remove("hidden");
   if (inputValue === "NEW15") {
     const totalTricketPrice = getElementById("total-tricket-price");
-    const discountsDitals = (totalTricketPrice * 15) / 100;
+    const discounts = (totalTricketPrice * 15) / 100;
     const grandTotal = getElementById("grand-price-total");
-    const discountedPrice = grandTotal - discountsDitals;
-    const couponContainer = document.getElementById("coupon-discoun");
+    const discountedPrice = grandTotal - discounts;
+    const couponContainer = document.getElementById("coupon-discount");
     couponContainer.classList.add("hidden");
     setElementInnerTextById("discount-detals-price", discounts);
     setElementInnerTextById("grand-price-total", discountedPrice);
@@ -81,6 +81,6 @@ document.getElementById("apply").addEventListener("click", function () {
     setElementInnerTextById("discount-detals-price", discounts);
     setElementInnerTextById("grand-price-total", discountedPrice);
   } else {
-    alert("Invalid Coupon Code");
+    alert("This coupon code is not valid");
   }
 });
